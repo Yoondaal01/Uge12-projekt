@@ -1,5 +1,18 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-}/*# sourceMappingURL=style.css.map */
+}
+
+body {
+  font-family: "Anybody", sans-serif;
+}
+
+/*forside*/
+/*HEADER*/
+header {
+  min-height: 1649px;
+  width: auto;
+  background-image: url(../billeder/plastic-bag.png);
+}
+
+/*nav*//*# sourceMappingURL=style.css.map */
