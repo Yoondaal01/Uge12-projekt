@@ -7,9 +7,9 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: "Anybody", sans-serif;
-
 }
 
 /*forside*/
@@ -18,7 +18,11 @@ body{
 header{
     min-height:1649px;
     width: auto;
-    background-image: url(../billeder/plastic-bag.png);
+    background-image: url("../CSS/billeder/plastic-bag.png");
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /*nav*/
 
