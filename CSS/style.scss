@@ -1,6 +1,21 @@
 
+/*General Styling*/
 
+$bg-color: #F2ECD8;
 
+$primary-color: #C11022;
+$pink:#DC9CDA;
+$green:#569750;
+$light-green:#8FCE89;
+$yellow:#F2C104;
+$blue:#3C5FB8;
+
+@mixin heading1($font-wght:700, $color:$primary-color,$fnt-size: 40px,$fnt-style:italic){
+    font-weight: $font-wght;
+    color: $primary-color;
+    font-size: $fnt-size;
+    font-style: $fnt-style;
+}
 
 
 *{
@@ -10,21 +25,182 @@
 
 body{
     font-family: "Anybody", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/*forside*/
+h1{
+    @include heading1;
+    font-style: normal;
+    font-size: 64px;
+}
+p{
+    font-size: 24px;
+    font-weight: 400;
+    color: black
+}
+a{
+    font-size: 24px;
+    font-weight: 400;
+    color: black
+}
 
-/*HEADER*/
+button{
+    all: unset;
+    width: 212px;
+    height: 57px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    border-radius: 84px;
+    background-color: $primary-color;
+    cursor: pointer;
+
+}
+.cta{
+    display: flex;
+    flex-direction: column;
+    max-width:40vw;
+    padding: 70px;
+    gap: 20px;
+}
+
+
+/*FORSIDE*/
+
+/*header*/
+
 header{
-    min-height:1649px;
-    width: auto;
-    background-image: url("../CSS/billeder/plastic-bag.png");
-    height: auto;
-    background-size: cover;
+    max-width: 1649px;
+    height: 665px;
+    margin: 30px 30px 30px 30px;
+  
+    background-image: url("../CSS/pics/plastic-bag.png");
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+ 
+    img{
+        width: 25%;
+        height: auto;
+    
+    }
 }
-/*nav*/
 
 
+/*nav og menu*/
+
+nav {
+    li:first-child{
+        margin-right: auto;
+        margin-left: 10px;
+    }
+    
+    img{
+        width: 140px;
+        height: 25px;
+        
+    }
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 72px;
+
+    a{
+        height: 100%;
+        padding: 30px 30px;
+        font-weight: 700;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color:black;
+    }
+
+    a:hover{
+       color: $primary-color;
+    }
+}
+
+/*sidebar*/
+
+.sidebar{
+    position: fixed;
+    top: 20;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: $bg-color;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 10px  rgba(0,0,0,0.75);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    img{
+        width: 165px;
+        height: 34px;
+        
+    }
+
+    li{
+       width: 100%; 
+    }
+    a{
+        width: 100%;
+    }
+}
+
+
+
+
+ /*MEDIA QUERIES*/
+
+.menu-button{
+    display: none;
+}
+@media(max-width: 900px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+   
+}
+
+@media(max-width: 400px){
+    
+    header{
+        margin:0;
+        background-repeat:repeat;
+        height: 300px;
+    }
+    .sidebar{
+        display: flex;
+        width:100%;
+        align-items: center;
+        height: 60vh;
+        margin: 0;
+    }
+
+    nav{
+        padding: 0 10px;
+
+         ul a{
+            justify-content: center;
+            padding:30px 0;
+        }
+
+         li:first-child{
+            margin-left: 0px;
+        }
+    }
+}
 
