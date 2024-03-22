@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Events</title>
+</head>
+<body>
+    <header class="header3">
+        
+        <nav>
+           
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><span class="material-symbols-outlined">
+                    close
+                    </span></a></li>  
+                <li><a href="index.html"><img src="CSS/pics/less waste.png" alt="less waste logo"></li></a></li>
+                <li><a href="index.html">forside</a></li>
+                <li><a href="genbrug.html">genbrug</a></li>
+                <li><a href="#">madspild</a></li>             
+                <li><a href="events.html">events</a></li>       
+            </ul>
+            <ul>
+                <li><a href="index.html"><img src="CSS/pics/less waste.png" alt="less waste logo"></li></a></li>
+                <li class="hideOnMobile"><a href="index.html">forside</a></li>
+                <li class="hideOnMobile"><a href="#">genbrug</a></li>
+                <li class="hideOnMobile"><a href="#">madspild</a></li>             
+                <li class="hideOnMobile"><a href="#">events</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><span class="material-symbols-outlined">
+                    menu
+                    </span></a></li>               
+            </ul>
+        </nav>
+        <div class="cta">
+            <h1>Hvordan sorterer du dit affald?</h1>
+            <a href="#finddinvej"><button>læs mere</button></a>
+        </div>
+
+        <main>
+            <section class="section5">
+                <h2>Deltag i forskellige arrangementer for at lære mere om bæredygtighed</h2>
+                <div class="second">
+                    
+                    <img class="event" src="CSS/pics/eventpic.png" alt="event">
+                    <div class="text2">
+                        <ul>
+                            <li>Introduktion til genbrug: Opstil stationer, hvor familier kan lære om forskellige typer genbrug og hvordan man korrekt sorterer deres affald.</li>
+                            <li>DIY Miljøvenlige Håndværk: Giv materialer til familier, så de kan skabe miljøvenlige håndværksprojekter ved hjælp af genbrugsmaterialer.</li>
+                            <li>Komposteringsworkshop: Lær familier, hvordan de kan starte en kompostbunke derhjemme, og fordelene ved kompostering for miljøet.
+                            </li>
+                            <li>Naturvandring: Arranger en guidet naturvandring, hvor familier kan lære om lokale planter, dyr og økosystemer.</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+
+
+
+
+        <footer>
+            <h3>Connect with Less Waste</h3>
+            <div class="footer-container">
+                <div class="footer1">
+                    <h3>Socialer medier</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>TikTok</li>
+                    </ul>
+                </div>
+                <div class="footer1">
+                    <h3>Udforsk vore side</h3>
+                    <ul>
+                        <li><a href="index.html">Forside</a></li>
+                        <li><a href="genbrug.html">Genbrug</a></li>
+                        <li><a href="#">Madspild</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer1">
+                    <h3>Support</h3>
+                    <ul>
+                        <li>Telefon: 12345678</li>
+                        <li><a href = "mailto: abc@example.com">Send Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    
+    
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+                
+        </script>
+        
+
+    </body>
+
+
+    </header>
